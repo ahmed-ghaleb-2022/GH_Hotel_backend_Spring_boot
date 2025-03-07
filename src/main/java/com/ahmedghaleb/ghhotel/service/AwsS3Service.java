@@ -20,10 +20,10 @@ public class AwsS3Service {
 
     private final String bucketName = "gh-hotel-images";
 
-    @Value("${aws.s3.access.key}")
+    @Value("${AWS_ACCESS_KEY_ID}")
     private String awsS3AccessKey;
 
-    @Value("${aws.s3.secret.key}")
+    @Value("${AWS_SECRET_ACCESS_KEY}")
     private String awsS3SecretKey;
 
     public String saveImageToS3(MultipartFile photo) {
